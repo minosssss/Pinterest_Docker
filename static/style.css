@@ -1,0 +1,30 @@
+
+body {
+
+}
+
+header, footer{
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1, footer h3 {
+    margin: 40px;
+    font-family: 'Lobster', cursive;
+}
+
+foorter > span {
+    font-size: 8px;
+}
+
+footer {
+    margin-top: 20px;
+}
+main {
+    height: 800px;
+    background-color: tomato;
+    margin: 20px
+}
