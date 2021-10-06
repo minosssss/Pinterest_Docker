@@ -1,24 +1,23 @@
 
-
-
 body {
     margin: 0 auto;
 }
 
 header, footer{
     text-align: center;
-    margin: 20 0 0 20;
+    margin: 2rem 0 0 2rem;
+    font-family: 'Lobster', cursive;
 }
 .pragmatic {
-    margin: 40px;
+    margin: 2rem;
     font-family: 'Lobster', cursive;
 }
 .footer_logo {
-    font-size: 10px;
+    font-size: .7rem;
 }
 
 main {
-    height: 800px;
+    height: 40rem;
     background-color: tomato;
-    margin: 20px
+    margin: 2rem
 }
