@@ -1,28 +1,22 @@
 
-body {
 
+
+body {
+    margin: 0 auto;
 }
 
 header, footer{
     text-align: center;
+    margin: 20 0 0 20;
 }
-
-header {
-    margin-bottom: 20px;
-}
-
-header h1, footer h3 {
+.pragmatic {
     margin: 40px;
     font-family: 'Lobster', cursive;
 }
-
-foorter > span {
-    font-size: 8px;
+.footer_logo {
+    font-size: 10px;
 }
 
-footer {
-    margin-top: 20px;
-}
 main {
     height: 800px;
     background-color: tomato;
