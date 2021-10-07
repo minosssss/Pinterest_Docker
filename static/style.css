@@ -16,8 +16,19 @@ header, footer{
     font-size: .7rem;
 }
 
-main {
+.main-page {
     height: 40rem;
     background-color: tomato;
     margin: 2rem
+}
+
+#list-text {
+    font-family: 'lobster',cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.list-posting, .list-input, .list-output {
+    text-align: center;
+    margin: 0.6rem 0 0.6rem 0;
 }

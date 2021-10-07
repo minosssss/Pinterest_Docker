@@ -2,8 +2,25 @@
 
 {% block content %}
 
-    <main>
+    <main class="main-page">
+        <div class="list">
+            <h1 id="list-text">Hello World LIST!</h1>
 
+            <form action="/account/hello_world/"  method="post">
+                {% csrf_token %}
+                <div class="list-input">
+                    <input type="text" name="hello_world_input">
+                </div>
+                <div class="list-posting">
+                    <input type="submit" class="btn btn-primary" value="POST">
+                </div>
+            </form>
+            {% if hello_world_output %}
+            <h1 class="list-output">
+                {{ hello_world_output.text }}
+            </h1>
+            {% endif %}
+        </div>
     </main>
 
 
