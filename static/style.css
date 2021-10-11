@@ -1,11 +1,16 @@
 
 body {
     margin: 0 auto;
+    font-family: "Nanum Gothic", sans-serif;
 }
 
+hr {
+    box-shadow: 0 10px 10px -10px ###bbb inset;
+
+}
 header, footer{
     text-align: center;
-    margin: 2rem 0 0 2rem;
+    margin: 2rem 0 2rem 0;
     font-family: 'Lobster', cursive;
 }
 .pragmatic {
@@ -31,4 +36,26 @@ header, footer{
 .list-posting, .list-input, .list-output {
     text-align: center;
     margin: 0.6rem 0 0.6rem 0;
+}
+
+.login_form, .create-form, detail-form {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 33%;
+
+}
+
+.detail-form h2 {
+    font-weight: 600;
+}
+
+.login_form h4,
+.create-form h4,
+.detail-form {
+    text-align: center;
+}
+
+.form-group:nth-child(3) {
+    margin-top: 0.6rem;
 }

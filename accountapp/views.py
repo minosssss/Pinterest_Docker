@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 from django.urls import reverse, reverse_lazy
-from django.views.generic import CreateView
+from django.views.generic import CreateView, DetailView
 
 from accountapp.models import HelloWorld
 
@@ -32,3 +32,9 @@ class AccountCreateView(CreateView):
     #성공하고 어디로 이동할 지 지정 # reverse는 함수형 base , reverse_lazy 객체형 base
     template_name = 'accountapp/create.html'
     #성공했을 때 보여줄 페이지
+
+
+class AccountDetailView(DetailView):
+    model = User
+    context_object_name = 'target_user'
+    template_name = 'accountapp/detail.html'
