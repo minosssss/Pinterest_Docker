@@ -4,7 +4,7 @@
 
     <div class="create-form">
         <h4>Quit</h4>
-        <form action="{% url 'accountapp:delete' pk=target_user %}" method="post">
+        <form action="{% url 'accountapp:delete' pk=target_user.pk %}" method="post">
             {% csrf_token %}
             <input type="submit" class="btn btn-danger rounded-pill col-12 mt-4 mb-4">
         </form>
