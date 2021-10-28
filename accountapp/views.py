@@ -41,6 +41,7 @@ class AccountDetailView(DetailView):
 
 class AccountUpdateView(UpdateView):
     model = User
+    context_object_name = 'target_user'
     form_class = AccountUpdateForm #어떤 로그인 폼을 사용할 것인지 지정
     success_url = reverse_lazy('accountapp:hello_world')
     #성공하고 어디로 이동할 지 지정 # reverse는 함수형 base , reverse_lazy 객체형 base
@@ -49,6 +50,7 @@ class AccountUpdateView(UpdateView):
 
 class AccountDeleteView(DeleteView):
     model = User
+    context_object_name = 'target_user'
     success_url = reverse_lazy('accountapp:login')
     #성공하고 어디로 이동할 지 지정 # reverse는 함수형 base , reverse_lazy 객체형 base
     template_name = 'accountapp/delete.html'
