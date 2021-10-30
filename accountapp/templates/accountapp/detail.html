@@ -3,23 +3,31 @@
 {% block content %}
 
     <div class="detail-form">
-        <div>
-            <p>
-                {{  target_user.date_joined }}
-            </p>
-            <h2>
-                {{  target_user.username }}
-            </h2>
-            {% if target_user == user %}
-                <a href="{% url 'accountapp:update' pk=user.pk %}">
+        <div class="profile_main">
+{#            <p>#}
+{#                {{ target_user.date_joined }}#}
+{#            </p>#}
+            <img class="profile_img" src="{{ target_user.profile.image.url }}" alt="" style="" >
+            {% if target_user.profile %}
+            {{ target_user.profile.nickname }}
+            <a href="{% url 'profileapp:update' pk=target_user.profile.pk %}">
+                <span>Edit</span>
+            </a>
+
+            {% else %}
+                <a href="{% url 'profileapp:create' %}">
                     <P>
-                        Change Info
+                        Create Profile
                     </P>
                 </a>
+            {% endif %}
+            <h5> {{ target_user.profile.message }}</h5>
+            {% if target_user == user %}
+                <a href="{% url 'accountapp:update' pk=user.pk %}">
+                    <h3>Change Info</h3>
+                </a>
                 <a href="{% url 'accountapp:delete' pk=user.pk %}">
-                    <P>
-                        Quit
-                    </P>
+                    <h4>Quit</h4>
                 </a>
             {% endif %}
         </div>

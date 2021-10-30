@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+
+    <div class="create-form">
+        <h4>Profile Create</h4>
+        <form action="{% url 'profileapp:create' %}" method="post" enctype="multipart/form-data">
+            <!-- image타입이 추가되어서 enctype="multipart/form-data"추가 -->
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <input type="submit" class="btn btn-dark rounded-pill col-12 mt-4 mb-4">
+        </form>
+    </div>
+
+{% endblock %}

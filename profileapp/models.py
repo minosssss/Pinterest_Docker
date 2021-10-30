@@ -5,7 +5,7 @@ from django.db import models
 
 
 class Profile(models.Model):
-    user = models.OneToOnefiled(
+    user = models.OneToOneField(
         User, on_delete=models.CASCADE, related_name='profile')
     # delete = 유저(객체)가 사라질 때, CASCADE = 프로필 같이 삭제, related_name = 바로 접근할 수 있게 이름 지정
     # upload = 서버의 내부저장경로. /media/ 경로 밑에 저장

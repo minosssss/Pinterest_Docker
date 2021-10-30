@@ -60,3 +60,23 @@ header, footer{
 .form-group:nth-child(3) {
     margin-top: 0.6rem;
 }
+.profile_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile_img {
+    margin: 2rem 0 2rem 0;
+    width:10rem;
+    height:10rem;
+    border-radius: 50%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    /* 추가된 부분 */
+    object-fit: cover; /* 익스플로러에서는 사용 불가능 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
