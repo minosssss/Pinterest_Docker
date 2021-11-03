@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="detail-form">
+        <div class="profile_main">
+            <h1>
+                {{  target_article.title }}
+            </h1>
+
+            <img src="{{ target_article.image.url }}" alt="">
+
+            <p>
+                {{ target_article.content }}
+            </p>
+            <a href="{% url 'articleapp:update' pk=target_article.pk %}">
+                <p>Update Articles</p>
+            </a>
+            <a href="{% url 'articleapp:delete' pk=target_article.pk %}">
+                <p>Delete Articles</p>
+            </a>
+        </div>
+    </div>
+
+
+{% endblock %}

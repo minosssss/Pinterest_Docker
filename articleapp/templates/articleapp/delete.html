@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+
+    <div class="create-form">
+        <h4>Delete Article : {{ target_article.title }}</h4>
+        <form action="{% url 'articleapp:delete' pk=target_article.pk %}" method="post">
+            {% csrf_token %}
+            <input type="submit" class="btn btn-danger rounded-pill col-12 mt-4 mb-4">
+        </form>
+    </div>
+
+{% endblock %}

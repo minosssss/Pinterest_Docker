@@ -50,10 +50,10 @@ header, footer{
 .detail-form h2 {
     font-weight: 600;
 }
-
 .login_form h4,
 .create-form h4,
-.detail-form {
+.create-article_form,
+.detail-form{
     text-align: center;
 }
 
