@@ -8,11 +8,12 @@ from django.http import HttpResponse
 # Create your views here.
 from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
-from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
+from django.views.generic import CreateView, DetailView, UpdateView, DeleteView, ListView
 
 from accountapp.decorator import account_ownership_required
 from accountapp.forms import AccountUpdateForm
 from accountapp.models import HelloWorld
+from articleapp.models import Article
 
 has_ownership = [login_required, account_ownership_required]
 
@@ -62,3 +63,5 @@ class AccountDeleteView(DeleteView):
     context_object_name = 'target_user'
     success_url = reverse_lazy('accountapp:login')
     template_name = 'accountapp/delete.html'
+
+

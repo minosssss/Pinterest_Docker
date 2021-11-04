@@ -53,10 +53,14 @@ header, footer{
 .login_form h4,
 .create-form h4,
 .create-article_form,
-.detail-form{
+.detail-form,
+.no_article,
+#pagination_number {
     text-align: center;
 }
-
+#pagination_number {
+    margin:1rem 0;
+}
 .form-group:nth-child(3) {
     margin-top: 0.6rem;
 }
@@ -64,6 +68,16 @@ header, footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.article_detail img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.article_detail a {
+
+
 }
 .profile_img {
     margin: 2rem 0 2rem 0;
@@ -80,3 +94,4 @@ header, footer{
     background-size: cover;
     background-position: center center;
 }
+
