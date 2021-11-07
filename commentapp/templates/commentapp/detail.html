@@ -1,11 +1,17 @@
-<div class="comment">
+<div class="comment" >
     <div>
-        <h3>
-            <strong>{{ comment.writer.profile.nickname }}</strong>
-        </h3>
+        <strong>{{ comment.writer.profile.nickname }}</strong>
         {{ comment.created_at }}
     </div>
     <div>
         {{ comment.content }}
     </div>
+    {% if comment.writer == user %}
+    <div id="comment_delete" >
+        <form action="{% url 'commentapp:delete' pk=comment.pk %}" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Delete" class="btn btn-danger rounded-pill ">
+        </form>
+    </div>
+    {% endif %}
 </div>

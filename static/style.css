@@ -41,12 +41,18 @@ footer {
 }
 
 .login_form,
-.create-form,
-.detail-form {
+.create-form {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
   width: 33%;
+}
+
+.detail-form {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 50%;
 }
 
 .detail-form h2 {
@@ -95,8 +101,4 @@ footer {
   background-position: center center;
 }
 
-.comment {
-  display: flex;
-  border: 1px solid;
-  text-align: left;
-}
+
