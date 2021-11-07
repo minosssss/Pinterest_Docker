@@ -1,54 +1,56 @@
-
+@import "comment/comment.css";
 body {
-    margin: 0 auto;
-    font-family: "Nanum Gothic", sans-serif;
+  margin: 0 auto;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 hr {
-    box-shadow: 0 0.6rem 0.6rem -0.6px #bbbbbb inset;
-
+  box-shadow: 0 0.6rem 0.6rem -0.6px #bbbbbb inset;
 }
-header, footer{
-    text-align: center;
-    margin: 2rem 0 2rem 0;
-    font-family: 'Lobster', cursive;
+header,
+footer {
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  font-family: "Lobster", cursive;
 }
 .pragmatic {
-    margin: 2rem;
-    font-family: 'Lobster', cursive;
+  margin: 2rem;
+  font-family: "Lobster", cursive;
 }
 .footer_logo {
-    font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .main-page {
-    height: 40rem;
-    background-color: tomato;
-    margin: 2rem
+  height: 40rem;
+  background-color: tomato;
+  margin: 2rem;
 }
 
 #list-text {
-    font-family: 'lobster',cursive;
-    font-size: 3rem;
-    text-align: center;
+  font-family: "lobster", cursive;
+  font-size: 3rem;
+  text-align: center;
 }
 
-.list-posting, .list-input, .list-output {
-    text-align: center;
-    margin: 0.6rem 0 0.6rem 0;
+.list-posting,
+.list-input,
+.list-output {
+  text-align: center;
+  margin: 0.6rem 0 0.6rem 0;
 }
 
 .login_form,
 .create-form,
 .detail-form {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    width: 33%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 33%;
 }
 
 .detail-form h2 {
-    font-weight: 600;
+  font-weight: 600;
 }
 .login_form h4,
 .create-form h4,
@@ -56,42 +58,45 @@ header, footer{
 .detail-form,
 .no_article,
 #pagination_number {
-    text-align: center;
+  text-align: center;
 }
 #pagination_number {
-    margin:1rem 0;
+  margin: 1rem 0;
 }
 .form-group:nth-child(3) {
-    margin-top: 0.6rem;
+  margin-top: 0.6rem;
 }
 .profile_main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .article_detail img {
-    width: 100%;
-    border-radius: 1rem;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .article_detail a {
-
-
 }
 .profile_img {
-    margin: 2rem 0 2rem 0;
-    width:10rem;
-    height:10rem;
-    border-radius: 50%;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    /* 추가된 부분 */
-    object-fit: cover; /* 익스플로러에서는 사용 불가능 */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  margin: 2rem 0 2rem 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* 추가된 부분 */
+  object-fit: cover; /* 익스플로러에서는 사용 불가능 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
+.comment {
+  display: flex;
+  border: 1px solid;
+  text-align: left;
+}
