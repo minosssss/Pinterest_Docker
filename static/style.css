@@ -1,7 +1,19 @@
-@import "comment/comment.css";
+@import "components/comment.css";
+@import "components/project.css";
+
 body {
   margin: 0 auto;
   font-family: "Nanum Gothic", sans-serif;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+body a {
+  color: dimgrey;
+  text-decoration: none;
 }
 
 hr {
@@ -63,6 +75,7 @@ footer {
 .create-article_form,
 .detail-form,
 .no_article,
+.no_project,
 #pagination_number {
   text-align: center;
 }
@@ -106,4 +119,10 @@ footer {
   html {
     font-size: 13px;
   }
+}
+
+
+
+.pragmatic_nav span{
+  margin: 0.5rem
 }

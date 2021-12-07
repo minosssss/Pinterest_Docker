@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="project_form">
+        <div class="project_detail">
+            <img src="{{ target_project.image.url }}" alt="">
+            <h2>
+                {{ target_project.title }}
+            </h2>
+            <h5>
+                {{ target_project.description }}
+            </h5>
+        </div>
+    </div>
+
+
+{% endblock %}

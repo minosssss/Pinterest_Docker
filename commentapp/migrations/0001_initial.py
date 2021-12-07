@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('articleapp', '0001_initial'),
+        ('projectapp', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('content', models.TextField()),
                 ('created_at', models.DateTimeField(auto_now=True)),
-                ('article', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='commnet', to='articleapp.article')),
+                ('article', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='commnet', to='projectapp.article')),
                 ('writer', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='commnet', to=settings.AUTH_USER_MODEL)),
             ],
         ),

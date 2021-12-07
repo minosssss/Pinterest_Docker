@@ -3,12 +3,13 @@
         <div class="pragmatic logo_top">
             <h1>Pragmatic</h1>
         </div>
-        <nav>
+        <nav class="pragmatic_nav">
             <a href="{% url 'articleapp:list' %}">
                 <span>Articles</span>
             </a>
-            <span>nav2</span>
-            <span>nav3</span>
+            <a href="{% url 'projectapp:list' %}?next={{ request.path }}">
+                <span>Projects</span>
+            </a>
             {% if not user.is_authenticated %}
             <a href="{% url 'accountapp:login' %}?next={{ request.path }}">
                 <span>login</span>
