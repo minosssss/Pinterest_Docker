@@ -67,6 +67,16 @@ footer {
   width: 50%;
 }
 
+.icon {
+  box-shadow: 0 0 4px #ccc;
+  border-radius: 10rem;
+  padding: .4rem;
+}
+
+.icon-quit:hover {
+  color: orangered;
+}
+
 .detail-form h2 {
   font-weight: 600;
 }
@@ -86,9 +96,12 @@ footer {
   margin-top: 0.6rem;
 }
 .profile_main {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile_message {
+  margin: 1.5rem
 }
 
 .article_detail img {

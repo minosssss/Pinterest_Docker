@@ -4,30 +4,28 @@
 
     <div class="detail-form">
         <div class="profile_main">
-{#            <p>#}
-{#                {{ target_user.date_joined }}#}
-{#            </p>#}
             {% if target_user.profile %}
-            <img class="profile_img" src="{{ target_user.profile.image.url }}" alt="" style="" >
-                <h5>{{ target_user.profile.nickname }}</h5>
-            <a href="{% url 'profileapp:update' pk=target_user.profile.pk %}">
-                <span>Edit</span>
-            </a>
-                <h5> {{ target_user.profile.message }}</h5>
+                <img class="profile_img" src="{{ target_user.profile.image.url }}" alt="" style="" >
+                <h2>{{ target_user.profile.nickname }}
+                    <a class="icon material-icons" href="{% url 'profileapp:update' pk=target_user.profile.pk %}">
+                        <span>edit</span>
+                    </a>
+                </h2>
+                <h5 class="profile_message"> {{ target_user.profile.message }}</h5>
             {% else %}
-                <a href="{% url 'profileapp:create' %}">
-                    <P>
-                        Create Profile
-                    </P>
+                <a class="icon material-icons" href="{% url 'profileapp:create' %}">
+                    <span>
+                        account_circle
+                    </span>
                 </a>
             {% endif %}
 
             {% if target_user == user %}
-                <a href="{% url 'accountapp:update' pk=user.pk %}">
-                    <h3>Change Info</h3>
+                <a class="icon material-icons" href="{% url 'accountapp:update' pk=user.pk %}">
+                    <span>settings</span>
                 </a>
-                <a href="{% url 'accountapp:delete' pk=user.pk %}">
-                    <h4>Quit</h4>
+                <a class="icon icon-quit material-icons" href="{% url 'accountapp:delete' pk=user.pk %}">
+                    <span>cancel</span>
                 </a>
             {% endif %}
 
