@@ -1,0 +1,21 @@
+.project_detail img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    object-fit: cover;
+}
+
+.project_detail h2 {
+    font-family: "Nanum Gothic";
+}
+
+.project_detail h5 {
+    margin-bottom: 3rem;
+}
+
+.project_form {
+    text-align: center;
+    max-width: 500px;
+    margin: 4rem auto 1.5rem auto;
+}

@@ -1,0 +1,141 @@
+@import "components/comment.css";
+@import "components/project.css";
+
+body {
+  margin: 0 auto;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+body a {
+  color: dimgrey;
+  text-decoration: none;
+}
+
+hr {
+  box-shadow: 0 0.6rem 0.6rem -0.6px #bbbbbb inset;
+}
+header,
+footer {
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  font-family: "Lobster", cursive;
+}
+.pragmatic {
+  margin: 2rem;
+  font-family: "Lobster", cursive;
+}
+.footer_logo {
+  font-size: 0.7rem;
+}
+
+.main-page {
+  height: 40rem;
+  background-color: tomato;
+  margin: 2rem;
+}
+
+#list-text {
+  font-family: "lobster", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.list-posting,
+.list-input,
+.list-output {
+  text-align: center;
+  margin: 0.6rem 0 0.6rem 0;
+}
+
+.login_form,
+.create-form {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 33%;
+}
+
+.detail-form {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 50%;
+}
+
+.icon {
+  box-shadow: 0 0 4px #ccc;
+  border-radius: 10rem;
+  padding: .4rem;
+}
+
+.icon-quit:hover {
+  color: orangered;
+}
+
+.detail-form h2 {
+  font-weight: 600;
+}
+.login_form h4,
+.create-form h4,
+.create-article_form,
+.detail-form,
+.no_article,
+.no_project,
+#pagination_number {
+  text-align: center;
+}
+#pagination_number {
+  margin: 1rem 0;
+}
+.form-group:nth-child(3) {
+  margin-top: 0.6rem;
+}
+.profile_main {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile_message {
+  margin: 1.5rem
+}
+
+.article_detail img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.article_detail a {
+}
+.profile_img {
+  margin: 2rem 0 2rem 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* 추가된 부분 */
+  object-fit: cover; /* 익스플로러에서는 사용 불가능 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+
+
+.pragmatic_nav span{
+  margin: 0.5rem
+}
